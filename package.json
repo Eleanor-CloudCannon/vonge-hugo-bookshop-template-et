@@ -1,0 +1,25 @@
+{
+  "name": "vonge-hugo-bookshop-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eleanor-CloudCannon/vonge-hugo-bookshop-template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Eleanor-CloudCannon/vonge-hugo-bookshop-template/issues"
+  },
+  "homepage": "https://github.com/Eleanor-CloudCannon/vonge-hugo-bookshop-template#readme",
+  "dependencies": {
+    "@bookshop/browser": "3.4.1",
+    "@bookshop/generate": "3.4.1",
+    "@bookshop/hugo-engine": "3.4.1"
+  }
+}
