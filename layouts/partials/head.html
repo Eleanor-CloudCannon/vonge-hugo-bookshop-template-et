@@ -1,0 +1,30 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{{ if eq .RelPermalink "/" }}{{ .Site.Data.general_settings.title }}{{ else if .Title }}{{ .Title }}{{ else }}{{ .Site.Data.general_settings.title }}{{ end }}</title>
+  <meta name='description' content='{{ if .Params.description }}{{ .Params.description | plainify | chomp | truncate 160 }}{{ else }}{{ .Site.Data.general_settings.description }}{{ end }}'>
+
+  <link rel="canonical" href="{{ .RelPermalink }}">
+
+  <!-- Twitter Card , xml_escape removed, absolute_url removed from image-->
+  {{/*  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ if eq .RelPermalink "/" }}{{ .Site.Data.general_settings.title }}{{ else }}{{ .Title }} – {{ .Site.Data.general_settings.title }}{{ end }}">
+  <meta name="twitter:description" content="{{ if eq .RelPermalink "/" }}{{ .Site.Data.general_settings.description | plainify }}{{ else if .Page.Params.description }}{{ .Page.Params.description | plainify }}{{ else }}{{ .Summary | plainify }}{{ end }}">
+  <meta name="twitter:image:src" content="{{ if eq .RelPermalink "/" }}{{ .Site.Data.general_settings.social_media_share_image }}{{ else }}{{ .Page.image }}{{ end }}">  */}}
+
+  {{/*  <!-- Facebook OpenGraph -->
+  <meta property="og:title" content="{% if page.url == "/" %}{{ site.data.general_settings.title }}{% else %}{{ page.title }} – {{ site.data.general_settings.title }}{% endif %}">
+  <meta property="og:description" content="{% if page.url == "/" %}{{ site.data.general_settings.description | strip_html | xml_escape }}{% elsif page.description %}{{ page.description | strip_html | xml_escape }}{% else %}{{ page.excerpt | strip_html | xml_escape }}{% endif %}">
+  <meta property="og:image" content="{% if page.url == "/" %}{{ site.data.general_settings.social_media_share_image | absolute_url }}{% else %}{{ page.image | absolute_url }}{% endif %}">
+*/}}
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+
+  <!-- Ionicons -->
+  <link href="https://unpkg.com/ionicons@4.5.0/dist/css/ionicons.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/main.css">   
+</head>
